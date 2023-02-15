@@ -1,3 +1,3 @@
 export function run(): string {
-    return 'Hello World !';
+    return 'Hello World!';
 }
