@@ -15,5 +15,5 @@ jobs:
       with:
         url: "https://9bae-176-185-241-122.eu.ngrok.io"
         user: "root"
-        token: ${{ secrets.TOKEN }}
+        token: ${{ secrets.JENKINS_TOKEN }}
         job: "ecoshop-webapp"
