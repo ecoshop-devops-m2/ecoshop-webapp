@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+
+    "target": "esnext",
+    "lib": ["es6"],
+
+    "module": "commonjs",
+    "rootDirs": ["./src", "./test"],
+
+    "outDir": "build",
+
+    "esModuleInterop": true
+  }
+}
