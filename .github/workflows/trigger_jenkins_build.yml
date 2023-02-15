@@ -1,0 +1,20 @@
+name: trigger jenkins build
+on:
+  pull_request:
+      branches:
+        - main
+      types: [closed]
+      
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: trigger single Job
+      uses: appleboy/jenkins-action@master
+      with:
+        url: "https://9bae-176-185-241-122.eu.ngrok.io"
+        user: "root"
+        token: ${{ secrets.TOKEN }}
+        job: "ecoshop-webapp"
