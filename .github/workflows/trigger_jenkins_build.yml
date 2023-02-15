@@ -1,7 +1,6 @@
 name: trigger jenkins build
 on:
   pull_request:
-    branches: -main
     types: [ closed ]
       
 jobs:
