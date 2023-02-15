@@ -1,16 +1,15 @@
 name: trigger jenkins build
 on:
   pull_request:
-      branches:
-        - main
-      types: closed
+    branches: -main
+    types: [ closed ]
       
 jobs:
 
   build:
     name: Build
-    runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
     steps:
     - name: trigger single Job
       uses: appleboy/jenkins-action@master
