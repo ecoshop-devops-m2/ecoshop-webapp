@@ -14,6 +14,6 @@ jobs:
       uses: appleboy/jenkins-action@master
       with:
         url: "https://9bae-176-185-241-122.eu.ngrok.io"
-        user: "root"
+        user: "admin"
         token: "113911baecc7efc033a72e49df11d9f847"
         job: "ecoshop-webapp"
